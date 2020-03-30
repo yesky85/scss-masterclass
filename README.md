@@ -4,7 +4,7 @@
 
 ## Flexbox:
 
-- [ ] flex-direction
+- [x] flex-direction
 - [ ] order
 - [x] justify-content
 - [x] align-items

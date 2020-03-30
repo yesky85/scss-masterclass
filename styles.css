@@ -1,6 +1,8 @@
 .wrapper {
   display: flex;
+  /* Main Axis */
   justify-content: space-around;
+  /* Cross Axis */
   align-items: center;
   height: 100vh;
 }
