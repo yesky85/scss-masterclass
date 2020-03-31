@@ -5,10 +5,10 @@
 ## Flexbox:
 
 - [x] flex-direction
-- [ ] order
+- [x] order
 - [x] justify-content
 - [x] align-items
-- [ ] align-self
+- [x] align-self
 - [ ] flex-wrap
 - [ ] align-content
 - [ ] flex-grow
