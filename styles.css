@@ -3,8 +3,10 @@
   /* Main Axis */
   justify-content: space-around;
   /* Cross Axis */
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  align-content: space-between;
   height: 100vh;
+  flex-wrap: wrap;
 }
 
 .child {
@@ -13,13 +15,7 @@
   height: 200px;
   color: white;
   font-size: 50px;
-}
-
-.child:nth-child(2) {
-  align-self: center;
-  order: 1;
-}
-
-.child:nth-child(3) {
-  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
