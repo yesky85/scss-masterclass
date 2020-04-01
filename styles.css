@@ -4,30 +4,18 @@ body {
 }
 
 .father {
-  display: flex;
-  flex-direction: row;
-  /* Main Axis */
-  justify-content: space-between;
-  /* Cross Axis */
-  /* align-items: flex-start; */
-  align-content: space-between;
-  height: 100vh;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 50px 150px;
+  gap: 5px;
 }
 
 .child {
   background-color: gray;
   flex-basis: 200px;
-  height: 200px;
   color: white;
   font-size: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.child:nth-child(2) {
-  background-color: black;
-  /* flex-shrink: 2; */
-  /* flex-grow: 1; */
 }
