@@ -23,10 +23,10 @@
 - [x] row-gap
 - [x] gap
 - [x] grid-template-areas
-- [ ] grid-column-start
-- [ ] grid-column-end
-- [ ] grid-row-start
-- [ ] grid-row-end
+- [x] grid-column-start
+- [x] grid-column-end
+- [x] grid-row-start
+- [x] grid-row-end
 - [ ] grid-column
 - [ ] grid-row
 - [ ] grid-template
