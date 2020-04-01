@@ -3,19 +3,33 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.father {
+.grid {
   display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: 100px 50px 150px;
-  gap: 5px;
+  grid-template-columns: auto 100px;
+  grid-template-rows: 80px repeat(2, 100px) 80px;
+  grid-template-areas:
+    "header header header header"
+    "content content content nav"
+    "content content content nav"
+    "footer footer footer footer";
 }
 
-.child {
-  background-color: gray;
-  flex-basis: 200px;
-  color: white;
-  font-size: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header {
+  background-color: #2ecc71;
+  grid-area: header;
+}
+
+.content {
+  background-color: #3498db;
+  grid-area: content;
+}
+
+.nav {
+  background-color: #8e44ad;
+  grid-area: nav;
+}
+
+.footer {
+  background-color: #f39c12;
+  grid-area: footer;
 }
