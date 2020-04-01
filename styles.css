@@ -5,19 +5,19 @@ body {
 
 .father {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   /* Main Axis */
-  justify-content: space-around;
+  justify-content: space-between;
   /* Cross Axis */
   /* align-items: flex-start; */
   align-content: space-between;
   height: 100vh;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .child {
   background-color: gray;
-  flex-basis: 100px;
+  flex-basis: 200px;
   height: 200px;
   color: white;
   font-size: 50px;
