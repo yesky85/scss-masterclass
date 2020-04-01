@@ -5,7 +5,7 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 100px);
+  grid-template-columns: [first-line] 100px [second-line] 100px [third-line] 100px [fourth-line] 100px [fifth-line];
   grid-template-rows: repeat(4, 100px);
 }
 
@@ -16,7 +16,7 @@ body {
 
 .content {
   background-color: #3498db;
-  grid-column: 1 / -2;
+  grid-column: first-line / fourth-line;
   grid-row: span 2;
 }
 
