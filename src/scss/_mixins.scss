@@ -1,0 +1,11 @@
+@mixin link($color, $word) {
+  text-decoration: none;
+  display: block;
+  @if $word == 3 {
+    color: orange;
+  } @else if $word == 4 {
+    color: green;
+  } @else {
+    color: $color;
+  }
+}
