@@ -1,20 +1,31 @@
 @import "./variables";
 @import "./mixins";
+@import "./extends";
+
+// a {
+//   &:not(:last-child) {
+//     margin-bottom: 10px;
+//   }
+//   &:nth-child(odd) {
+//     @include link(purple, 0);
+//   }
+//   &:nth-child(even) {
+//     @include link($red, 0);
+//   }
+//   &:nth-child(3) {
+//     @include link(purple, 3);
+//   }
+//   &:nth-child(4) {
+//     @include link(purple, 4);
+//   }
+// }
 
 a {
-  &:not(:last-child) {
-    margin-bottom: 10px;
-  }
-  &:nth-child(odd) {
-    @include link(purple, 0);
-  }
-  &:nth-child(even) {
-    @include link($red, 0);
-  }
-  &:nth-child(3) {
-    @include link(purple, 3);
-  }
-  &:nth-child(4) {
-    @include link(purple, 4);
-  }
+  @extend %button;
+  text-decoration: none;
+}
+
+button {
+  @extend %button;
+  border: none;
 }
