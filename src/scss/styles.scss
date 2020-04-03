@@ -1,3 +1,21 @@
-body {
-  background-color: peru;
+@import "./variables";
+
+h2 {
+  color: $red;
+}
+
+.box {
+  margin-top: 20px;
+  &:hover {
+    background-color: green;
+  }
+  h2 {
+    color: blue;
+    &:hover {
+      color: red;
+    }
+  }
+  button {
+    color: red;
+  }
 }
